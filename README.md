@@ -7,7 +7,7 @@ Installation
 ------------
 
 ```
-  npm install event-loop-monitor --save
+npm install event-loop-monitor --save
 ```
 
 Usage
