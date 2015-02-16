@@ -74,10 +74,6 @@ EventLoopMonitor.prototype.resume = function() {
       ticks.length = 1;
    }, 4 * 1000);
 
-   if (this._loopMonitor.unref) {
-      this._loopMonitor.unref();
-      this._counter.unref();
-   }
 };
 
 module.exports = new EventLoopMonitor();
