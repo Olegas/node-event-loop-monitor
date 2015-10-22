@@ -22,9 +22,11 @@ EventLoopMonitor.prototype.stop = function() {
    clearInterval(this._counter);
 };
 
-EventLoopMonitor.prototype.resume = function() {
+EventLoopMonitor.prototype.resume = function(counterInterval) {
 
    var self = this;
+
+   if (isNaN(counterInterval)) counterInterval = 4 * 1000;
 
    this.stop();
 
@@ -72,7 +74,7 @@ EventLoopMonitor.prototype.resume = function() {
        */
       ticks[0] = ticks.pop();
       ticks.length = 1;
-   }, 4 * 1000);
+   }, counterInterval);
 
 };
 
