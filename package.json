@@ -1,6 +1,6 @@
 {
   "name": "event-loop-monitor",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "NodeJS event loop latency monitor",
   "main": "index.js",
   "scripts": {
